@@ -1,13 +1,732 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+:root {
+  --fs-sm: 14px;
+  --fs-md: 14px;
+  --fs-lg: 20px;
+  --fs-xl: 24px;
+  --fs-2xl: 32px;
+  --fs-3xl: 40px;
+  --fs-4xl: 35px;
+  --fs-5xl: 40px;
+  /* color */
+  --color-yellow: #fff624;
+  --color-grey: #c1c1c1;
+  --color-lightgrey: #d9d9d9;
+  --color-lightblack: #010101;
+  --color-lightwhite: #f1f1f1;
+  --color-darkgrey: #a9a9a9;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.ff-maro {
+  font-family: "Manrope", sans-serif;
+}
+
+.color-yellow {
+  color: var(--color-yellow);
+}
+
+.color-grey {
+  color: var(--color-grey);
+}
+
+.color-lightgrey {
+  color: var(--color-lightgrey);
+}
+
+.color-lightblack {
+  color: var(--color-lightblack);
+}
+
+.color-lightwhite {
+  color: var(--color-lightwhite);
+}
+
+.color-darkgrey {
+  color: var(--color-darkgrey);
+}
+
+.text-14 {
+  font-size: var(--fs-sm);
+}
+
+.text-16 {
+  font-size: var(--fs-md);
+}
+
+.text-20 {
+  font-size: var(--fs-lg);
+}
+
+.text-24 {
+  font-size: var(--fs-xl);
+}
+
+.text-32 {
+  font-size: var(--fs-2xl);
+}
+
+.text-40 {
+  font-size: var(--fs-3xl);
+}
+
+.text-48 {
+  font-size: var(--fs-4xl);
+}
+
+.text-60 {
+  font-size: var(--fs-5xl);
+}
+
+.lh-48 {
+  line-height: 48px;
+}
+
+.lh-24 {
+  line-height: 16px;
+}
+
+.lh-72 {
+  line-height: 55px;
+}
+
+.lh-21 {
+  line-height: 21px;
+}
+
+.lh-20 {
+  line-height: 20px;
+}
+
+.lh-208 {
+  line-height: 20.8px;
+}
+
+.lh-23 {
+  line-height: 23.4px;
+}
+
+.lh-36 {
+  line-height: 36px;
+}
+
+.lh-57 {
+  line-height: 41px;
+}
+
+.lh-30 {
+  line-height: 30px;
+}
+
+@media (min-width:576px) {
+  @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+  :root {
+    --fs-sm: 14px;
+    --fs-md: 16px;
+    --fs-lg: 20px;
+    --fs-xl: 24px;
+    --fs-2xl: 32px;
+    --fs-3xl: 40px;
+    --fs-4xl: 48px;
+    --fs-5xl: 60px;
+    /* color */
+    --color-yellow: #fff624;
+    --color-grey: #c1c1c1;
+    --color-lightgrey: #d9d9d9;
+    --color-lightblack: #010101;
+    --color-lightwhite: #f1f1f1;
+    --color-darkgrey: #a9a9a9;
+  }
+
+  .ff-maro {
+    font-family: "Manrope", sans-serif;
+  }
+
+  .color-yellow {
+    color: var(--color-yellow);
+  }
+
+  .color-grey {
+    color: var(--color-grey);
+  }
+
+  .color-lightgrey {
+    color: var(--color-lightgrey);
+  }
+
+  .color-lightblack {
+    color: var(--color-lightblack);
+  }
+
+  .color-lightwhite {
+    color: var(--color-lightwhite);
+  }
+
+  .color-darkgrey {
+    color: var(--color-darkgrey);
+  }
+
+  .text-14 {
+    font-size: var(--fs-sm);
+  }
+
+  .text-16 {
+    font-size: var(--fs-md);
+  }
+
+  .text-20 {
+    font-size: var(--fs-lg);
+  }
+
+  .text-24 {
+    font-size: var(--fs-xl);
+  }
+
+  .text-32 {
+    font-size: var(--fs-2xl);
+  }
+
+  .text-40 {
+    font-size: var(--fs-3xl);
+  }
+
+  .text-48 {
+    font-size: var(--fs-4xl);
+  }
+
+  .text-60 {
+    font-size: var(--fs-5xl);
+  }
+
+  .lh-48 {
+    line-height: 48px;
+  }
+
+  .lh-24 {
+    line-height: 24px;
+  }
+
+  .lh-72 {
+    line-height: 72px;
+  }
+
+  .lh-21 {
+    line-height: 21px;
+  }
+
+  .lh-20 {
+    line-height: 20px;
+  }
+
+  .lh-208 {
+    line-height: 20.8px;
+  }
+
+  .lh-23 {
+    line-height: 23.4px;
+  }
+
+  .lh-36 {
+    line-height: 36px;
+  }
+
+  .lh-57 {
+    line-height: 57px;
+  }
+
+  .lh-30 {
+    line-height: 30px;
+  }
+}
+
+@media (min-width:768px) {
+  @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+  :root {
+    --fs-sm: 14px;
+    --fs-md: 16px;
+    --fs-lg: 20px;
+    --fs-xl: 24px;
+    --fs-2xl: 32px;
+    --fs-3xl: 40px;
+    --fs-4xl: 48px;
+    --fs-5xl: 60px;
+    /* color */
+    --color-yellow: #fff624;
+    --color-grey: #c1c1c1;
+    --color-lightgrey: #d9d9d9;
+    --color-lightblack: #010101;
+    --color-lightwhite: #f1f1f1;
+    --color-darkgrey: #a9a9a9;
+  }
+
+  .ff-maro {
+    font-family: "Manrope", sans-serif;
+  }
+
+  .color-yellow {
+    color: var(--color-yellow);
+  }
+
+  .color-grey {
+    color: var(--color-grey);
+  }
+
+  .color-lightgrey {
+    color: var(--color-lightgrey);
+  }
+
+  .color-lightblack {
+    color: var(--color-lightblack);
+  }
+
+  .color-lightwhite {
+    color: var(--color-lightwhite);
+  }
+
+  .color-darkgrey {
+    color: var(--color-darkgrey);
+  }
+
+  .text-14 {
+    font-size: var(--fs-sm);
+  }
+
+  .text-16 {
+    font-size: var(--fs-md);
+  }
+
+  .text-20 {
+    font-size: var(--fs-lg);
+  }
+
+  .text-24 {
+    font-size: var(--fs-xl);
+  }
+
+  .text-32 {
+    font-size: var(--fs-2xl);
+  }
+
+  .text-40 {
+    font-size: var(--fs-3xl);
+  }
+
+  .text-48 {
+    font-size: var(--fs-4xl);
+  }
+
+  .text-60 {
+    font-size: var(--fs-5xl);
+  }
+
+  .lh-48 {
+    line-height: 48px;
+  }
+
+  .lh-24 {
+    line-height: 24px;
+  }
+
+  .lh-72 {
+    line-height: 72px;
+  }
+
+  .lh-21 {
+    line-height: 21px;
+  }
+
+  .lh-20 {
+    line-height: 20px;
+  }
+
+  .lh-208 {
+    line-height: 20.8px;
+  }
+
+  .lh-23 {
+    line-height: 23.4px;
+  }
+
+  .lh-36 {
+    line-height: 36px;
+  }
+
+  .lh-57 {
+    line-height: 57px;
+  }
+
+  .lh-30 {
+    line-height: 30px;
+  }
+
+}
+
+@media (min-width:992px) {
+  @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+  :root {
+    --fs-sm: 14px;
+    --fs-md: 16px;
+    --fs-lg: 20px;
+    --fs-xl: 24px;
+    --fs-2xl: 32px;
+    --fs-3xl: 40px;
+    --fs-4xl: 48px;
+    --fs-5xl: 60px;
+    /* color */
+    --color-yellow: #fff624;
+    --color-grey: #c1c1c1;
+    --color-lightgrey: #d9d9d9;
+    --color-lightblack: #010101;
+    --color-lightwhite: #f1f1f1;
+    --color-darkgrey: #a9a9a9;
+  }
+
+  .ff-maro {
+    font-family: "Manrope", sans-serif;
+  }
+
+  .color-yellow {
+    color: var(--color-yellow);
+  }
+
+  .color-grey {
+    color: var(--color-grey);
+  }
+
+  .color-lightgrey {
+    color: var(--color-lightgrey);
+  }
+
+  .color-lightblack {
+    color: var(--color-lightblack);
+  }
+
+  .color-lightwhite {
+    color: var(--color-lightwhite);
+  }
+
+  .color-darkgrey {
+    color: var(--color-darkgrey);
+  }
+
+  .text-14 {
+    font-size: var(--fs-sm);
+  }
+
+  .text-16 {
+    font-size: var(--fs-md);
+  }
+
+  .text-20 {
+    font-size: var(--fs-lg);
+  }
+
+  .text-24 {
+    font-size: var(--fs-xl);
+  }
+
+  .text-32 {
+    font-size: var(--fs-2xl);
+  }
+
+  .text-40 {
+    font-size: var(--fs-3xl);
+  }
+
+  .text-48 {
+    font-size: var(--fs-4xl);
+  }
+
+  .text-60 {
+    font-size: var(--fs-5xl);
+  }
+
+  .lh-48 {
+    line-height: 48px;
+  }
+
+  .lh-24 {
+    line-height: 24px;
+  }
+
+  .lh-72 {
+    line-height: 72px;
+  }
+
+  .lh-21 {
+    line-height: 21px;
+  }
+
+  .lh-20 {
+    line-height: 20px;
+  }
+
+  .lh-208 {
+    line-height: 20.8px;
+  }
+
+  .lh-23 {
+    line-height: 23.4px;
+  }
+
+  .lh-36 {
+    line-height: 36px;
+  }
+
+  .lh-57 {
+    line-height: 57px;
+  }
+
+  .lh-30 {
+    line-height: 30px;
+  }
+
+}
+
+@media (min-width:1024px) {
+  @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+  :root {
+    --fs-sm: 14px;
+    --fs-md: 16px;
+    --fs-lg: 20px;
+    --fs-xl: 24px;
+    --fs-2xl: 32px;
+    --fs-3xl: 40px;
+    --fs-4xl: 48px;
+    --fs-5xl: 60px;
+    /* color */
+    --color-yellow: #fff624;
+    --color-grey: #c1c1c1;
+    --color-lightgrey: #d9d9d9;
+    --color-lightblack: #010101;
+    --color-lightwhite: #f1f1f1;
+    --color-darkgrey: #a9a9a9;
+  }
+
+  .ff-maro {
+    font-family: "Manrope", sans-serif;
+  }
+
+  .color-yellow {
+    color: var(--color-yellow);
+  }
+
+  .color-grey {
+    color: var(--color-grey);
+  }
+
+  .color-lightgrey {
+    color: var(--color-lightgrey);
+  }
+
+  .color-lightblack {
+    color: var(--color-lightblack);
+  }
+
+  .color-lightwhite {
+    color: var(--color-lightwhite);
+  }
+
+  .color-darkgrey {
+    color: var(--color-darkgrey);
+  }
+
+  .text-14 {
+    font-size: var(--fs-sm);
+  }
+
+  .text-16 {
+    font-size: var(--fs-md);
+  }
+
+  .text-20 {
+    font-size: var(--fs-lg);
+  }
+
+  .text-24 {
+    font-size: var(--fs-xl);
+  }
+
+  .text-32 {
+    font-size: var(--fs-2xl);
+  }
+
+  .text-40 {
+    font-size: var(--fs-3xl);
+  }
+
+  .text-48 {
+    font-size: var(--fs-4xl);
+  }
+
+  .text-60 {
+    font-size: var(--fs-5xl);
+  }
+
+  .lh-48 {
+    line-height: 48px;
+  }
+
+  .lh-24 {
+    line-height: 24px;
+  }
+
+  .lh-72 {
+    line-height: 72px;
+  }
+
+  .lh-21 {
+    line-height: 21px;
+  }
+
+  .lh-20 {
+    line-height: 20px;
+  }
+
+  .lh-208 {
+    line-height: 20.8px;
+  }
+
+  .lh-23 {
+    line-height: 23.4px;
+  }
+
+  .lh-36 {
+    line-height: 36px;
+  }
+
+  .lh-57 {
+    line-height: 57px;
+  }
+
+  .lh-30 {
+    line-height: 30px;
+  }
+}
+
+@media (min-width:1200px) {
+  @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+  :root {
+    --fs-sm: 14px;
+    --fs-md: 16px;
+    --fs-lg: 20px;
+    --fs-xl: 24px;
+    --fs-2xl: 32px;
+    --fs-3xl: 40px;
+    --fs-4xl: 48px;
+    --fs-5xl: 60px;
+    /* color */
+    --color-yellow: #fff624;
+    --color-grey: #c1c1c1;
+    --color-lightgrey: #d9d9d9;
+    --color-lightblack: #010101;
+    --color-lightwhite: #f1f1f1;
+    --color-darkgrey: #a9a9a9;
+  }
+
+  .ff-maro {
+    font-family: "Manrope", sans-serif;
+  }
+
+  .color-yellow {
+    color: var(--color-yellow);
+  }
+
+  .color-grey {
+    color: var(--color-grey);
+  }
+
+  .color-lightgrey {
+    color: var(--color-lightgrey);
+  }
+
+  .color-lightblack {
+    color: var(--color-lightblack);
+  }
+
+  .color-lightwhite {
+    color: var(--color-lightwhite);
+  }
+
+  .color-darkgrey {
+    color: var(--color-darkgrey);
+  }
+
+  .text-14 {
+    font-size: var(--fs-sm);
+  }
+
+  .text-16 {
+    font-size: var(--fs-md);
+  }
+
+  .text-20 {
+    font-size: var(--fs-lg);
+  }
+
+  .text-24 {
+    font-size: var(--fs-xl);
+  }
+
+  .text-32 {
+    font-size: var(--fs-2xl);
+  }
+
+  .text-40 {
+    font-size: var(--fs-3xl);
+  }
+
+  .text-48 {
+    font-size: var(--fs-4xl);
+  }
+
+  .text-60 {
+    font-size: var(--fs-5xl);
+  }
+
+  .lh-48 {
+    line-height: 48px;
+  }
+
+  .lh-24 {
+    line-height: 24px;
+  }
+
+  .lh-72 {
+    line-height: 72px;
+  }
+
+  .lh-21 {
+    line-height: 21px;
+  }
+
+  .lh-20 {
+    line-height: 20px;
+  }
+
+  .lh-208 {
+    line-height: 20.8px;
+  }
+
+  .lh-23 {
+    line-height: 23.4px;
+  }
+
+  .lh-36 {
+    line-height: 36px;
+  }
+
+  .lh-57 {
+    line-height: 57px;
+  }
+
+  .lh-30 {
+    line-height: 30px;
+  }
+
 }
