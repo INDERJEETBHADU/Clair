@@ -54,7 +54,7 @@ function Secure() {
   return (
     <>
       <div
-        className="secure_bg_img overflow-hidden mt_neg_2 bg-black position-relative"
+        className="secure_bg_img  overflow-hidden mt_neg_2 bg_color_yellow position-relative"
         id="audit"
       >
         <Container>
@@ -62,7 +62,7 @@ function Secure() {
             <Col className=" d-flex   justify-content-center" lg={6}>
               <img src={secure_img} alt="secure_img" />
             </Col>
-            <Col lg={6}>
+            <Col lg={6} className=" pt-4 pt-md-0">
               <p className=" mb-0 ff-maro fw-normal text-20 lh-30 color-grey">
                 Rest easy knowing that $CLAIR is{" "}
               </p>
@@ -98,7 +98,7 @@ function Secure() {
                 </p>
               </div>
             </Col>
-            <Col lg={6}>
+            <Col lg={6} className=" pt-5 pt-md-0">
               <div className=" d-flex justify-content-center">
                 <div className="slider_box overflow-hidden">
                   <Slider {...settings}>

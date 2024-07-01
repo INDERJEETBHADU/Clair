@@ -12,7 +12,7 @@ function About() {
   const [tokensSold, setTokensSold] = useState(98212738);
   const [tokensRemaining, setTokensRemaining] = useState(80212738);
 
-  const deadline = "June, 30, 2024";
+  const deadline = "July, 30, 2024";
 
   const getTime = () => {
     const time = Date.parse(deadline) - Date.now();

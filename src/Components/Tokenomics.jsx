@@ -16,12 +16,12 @@ function Tokenomics() {
         <Container>
           <Row className=" pt_54">
             <Col lg={6}>
-              <div className=" pt-3 mt-1">
+              <div className=" pt-sm-3 mt-md-1">
                 <h2 className=" mb-0  ff-maro fw-semibold text-48 lh-57  color-lightwhite">
                   Tokenomics
                 </h2>
               </div>
-              <div className=" d-flex mt-3 pt-1 gap-3">
+              <div className=" d-flex mt-sm-3 pt-1 gap-3">
                 <p className=" mb-0 ff-maro fw-normal text-24 lh-36  color-grey">
                   Baby Sinclair
                 </p>
@@ -29,13 +29,13 @@ function Tokenomics() {
                   $Clair
                 </button>
               </div>
-              <p className=" mb-0 ff-maro fw-medium text-16 lh-24 color-grey mt-4">
+              <p className=" mb-0 ff-maro fw-medium text-16 lh-24 color-grey mt-sm-4 mt-2">
                 Total Tokens
               </p>
               <h3 className=" mb-0 ff-maro  fw-semibold text-40  lh-48 color-yellow mt-1">
                 100,000,000,000
               </h3>
-              <div className="  mt-3 pt-2  d-flex align-items-end  gap_12">
+              <div className="  mt-sm-3 pt-2  d-flex align-items-end  gap_12">
                 <img src={arrow_icon_right} alt="arrow_icon_right" />
                 <h4 className=" mb-0 ff-maro fw-medium text-24 lh-36 color-grey">
                   1%

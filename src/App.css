@@ -344,12 +344,7 @@ ul {
 }
 
 /* +++++++++++Address_______section_______css */
-.bg_address_img {
-    background-image: url("../src/assets/images/webp/bg-address.webp");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+
 
 .copy_input {
     border: 1px solid #FFFFFF3D;
@@ -376,17 +371,19 @@ ul {
     max-width: 806px;
 }
 
-.pt_169 {
-    padding-top: 169px;
+.adress_sec_padding {
+    padding-top: 39px;
+    padding-bottom: 38px;
 }
 
-.pb_168 {
-    padding-bottom: 168px;
-}
 
 .adress_ellipse_pos {
     left: -64%;
     bottom: 22%;
+}
+
+.bg_color_yellow {
+    background-color: #151505;
 }
 
 /* ++++++++++++++++++++++tokenomics++++++++++++++++++++++++++ */
@@ -471,12 +468,7 @@ ul {
     max-width: 475px;
 }
 
-.secure_bg_img {
-    background-image: url("../src/assets/images/webp/secure_bg_img.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
+
 
 .pt_45 {
     padding-top: 45px;
@@ -792,7 +784,6 @@ input[type='range']::-webkit-slider-thumb {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    min-height: 1140px;
 }
 
 .phase_box {
@@ -844,7 +835,7 @@ input[type='range']::-webkit-slider-thumb {
 }
 
 .roadmap_btm_layer_pos {
-    bottom: 4%;
+    bottom: -2%;
 }
 
 .mb_neg_36 {
@@ -909,9 +900,21 @@ input[type='range']::-webkit-slider-thumb {
     .pb_43 {
         padding-bottom: 53px;
     }
+
+    .adress_sec_padding {
+        padding-top: 59px;
+        padding-bottom: 58px;
+    }
 }
 
 @media (min-width:768px) {
+    .secure_bg_img {
+        background-image: url("../src/assets/images/webp/secure_bg_img.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
     .pt_54 {
         padding-top: 74px;
     }
@@ -944,6 +947,22 @@ input[type='range']::-webkit-slider-thumb {
 
     .pb_43 {
         padding-bottom: 63px;
+    }
+
+    .bg_address_img {
+        background-image: url("../src/assets/images/webp/bg-address.webp");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .bg_color_yellow {
+        background-color: black;
+    }
+
+    .adress_sec_padding {
+        padding-top: 119px;
+        padding-bottom: 118px;
     }
 }
 
@@ -995,6 +1014,11 @@ input[type='range']::-webkit-slider-thumb {
     .pb_43 {
         padding-bottom: 73px;
     }
+
+    .adress_sec_padding {
+        padding-top: 139px;
+        padding-bottom: 138px;
+    }
 }
 
 @media (min-width:1024px) {
@@ -1042,6 +1066,11 @@ input[type='range']::-webkit-slider-thumb {
     .pb_43 {
         padding-bottom: 83px;
     }
+
+    .adress_sec_padding {
+        padding-top: 149px;
+        padding-bottom: 148px;
+    }
 }
 
 @media (min-width:1200px) {
@@ -1077,6 +1106,12 @@ input[type='range']::-webkit-slider-thumb {
     .pb_78 {
         padding-bottom: 346px;
     }
+
+    .adress_sec_padding {
+        padding-top: 169px;
+        padding-bottom: 168px;
+    }
+
 }
 
 @media (max-width:992px) {

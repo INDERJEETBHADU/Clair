@@ -19,7 +19,7 @@ function Roadmap() {
             </h2>
           </div>
           <div className=" d-flex mt_100   flex-wrap   justify-content-around">
-            <div className="phase_box  mt_184">
+            <div className="phase_box mb-5 mb-lg-0  mt_184">
               <h5 className=" mb-0 ff-maro fw-medium text-32 lh-48  text-white">
                 Phase 1
               </h5>
@@ -69,7 +69,7 @@ function Roadmap() {
                 <img src={phase_1_btm} alt="phase_1_btm" />
               </div>
             </div>
-            <div className="phase_box   mt_78 h-100">
+            <div className="phase_box   mt_78  h-100">
               <h5 className=" mb-0 ff-maro fw-medium text-32 lh-48  text-white">
                 Phase 2
               </h5>
@@ -119,7 +119,7 @@ function Roadmap() {
                 <img src={phase_2_btm} alt="phase_1_btm" />
               </div>
             </div>
-            <div className="phase_box  mt-5 mt-md-0  h-100 ">
+            <div className="phase_box  mt-5 mt-lg-0  h-100 ">
               <h5 className=" mb-0 ff-maro fw-medium text-32 lh-48  text-white">
                 Phase 3
               </h5>
@@ -159,7 +159,7 @@ function Roadmap() {
             </div>
           </div>
         </Container>
-        <div className="roadmap_btm_layer_pos d-none d-md-block     position-absolute">
+        <div className="roadmap_btm_layer_pos d-none d-xl-block     position-absolute">
           <img className=" w-100" src={roadmap_btm} alt="roadmap_btm" />
         </div>
         <div className=" ylw_ellips position-absolute  d-none d-md-block  roadmap_ylw_ellipse2"></div>

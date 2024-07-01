@@ -15,10 +15,10 @@ function Address() {
 
   return (
     <div
-      className="bg_address_img bg-black mt_neg_2 position-relative"
+      className="bg_address_img bg_color_yellow mt_neg_2 position-relative"
       id="address"
     >
-      <div className="pt_169 pb_168">
+      <div className="adress_sec_padding">
         <Container>
           <h2 className="mb-0 ff-maro fw-semibold text-48 lh-57 text-center color-lightwhite">
             <span className="color-yellow">$CLAIR</span> Smart Contract Address

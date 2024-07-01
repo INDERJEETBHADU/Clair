@@ -3,10 +3,10 @@
 :root {
   --fs-sm: 14px;
   --fs-md: 14px;
-  --fs-lg: 20px;
+  --fs-lg: 17px;
   --fs-xl: 24px;
   --fs-2xl: 32px;
-  --fs-3xl: 40px;
+  --fs-3xl: 30px;
   --fs-4xl: 35px;
   --fs-5xl: 40px;
   /* color */
@@ -79,7 +79,7 @@
 }
 
 .lh-48 {
-  line-height: 48px;
+  line-height: 37px;
 }
 
 .lh-24 {
@@ -115,7 +115,7 @@
 }
 
 .lh-30 {
-  line-height: 30px;
+  line-height: 25px;
 }
 
 @media (min-width:576px) {
