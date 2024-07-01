@@ -8,8 +8,32 @@ import Frequently from "../src/Components/Frequently"
 import Socal from "../src/Components/Socal"
 import Footer from './Components/Footer';
 import Roadmap from './Components/Roadmap';
+import React, { useState, useEffect } from 'react';
 
 function App() {
+  const [isVisible, setIsVisible] = useState(false);
+
+  const toggleVisibility = () => {
+    if (window.pageYOffset > 300) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', toggleVisibility);
+    return () => {
+      window.removeEventListener('scroll', toggleVisibility);
+    };
+  }, []);
   return (
     < >
       <Hero />
@@ -17,10 +41,15 @@ function App() {
       <Address />
       <Tokenomics />
       <Secure />
-      <Roadmap/>
+      <Roadmap />
       <Frequently />
       <Socal />
-      <Footer/>
+      <Footer />
+      {isVisible && (
+        <button className="back-to-top " onClick={scrollToTop}>
+          ↑
+        </button>
+      )}
 
     </>
   );

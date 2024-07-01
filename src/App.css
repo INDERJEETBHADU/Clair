@@ -842,6 +842,30 @@ input[type='range']::-webkit-slider-thumb {
     margin-bottom: -36px;
 }
 
+/* +++++++++++++++++++++++++++++++++back____________top______________css */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    color: yellow;
+    cursor: pointer;
+    z-index: 1000;
+    border: 1px solid white;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0.7;
+}
+
+.back-to-top:hover {
+    opacity: 1;
+}
+
 @media (min-width:576px) {
     .baby_siclair_box {
 
