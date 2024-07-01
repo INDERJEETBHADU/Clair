@@ -16,7 +16,7 @@ function Address() {
   return (
     <div
       className="bg_address_img bg_color_yellow mt_neg_2 position-relative"
-      id="address"
+      id="adress"
     >
       <div className="adress_sec_padding">
         <Container>

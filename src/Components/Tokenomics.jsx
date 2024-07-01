@@ -90,7 +90,7 @@ function Tokenomics() {
                 </p>
               </div>
             </Col>
-            <Col lg={6}>
+            <Col lg={6} className=" d-flex justify-content-xl-end">
               <img
                 className="  max_w_491 w-100"
                 src={tokenomics}
