@@ -9,6 +9,7 @@ import Socal from "../src/Components/Socal"
 import Footer from './Components/Footer';
 import Roadmap from './Components/Roadmap';
 import React, { useState, useEffect } from 'react';
+import Loader from './Components/Loader';
 
 function App() {
   const [isVisible, setIsVisible] = useState(false);
@@ -34,6 +35,17 @@ function App() {
       window.removeEventListener('scroll', toggleVisibility);
     };
   }, []);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false); 
+    }, 2000); 
+  }, []);
+
+  if (isLoading) {
+    return <Loader />; 
+  }
   return (
     < >
       <Hero />
